@@ -9,6 +9,10 @@ I have replaced the contextual menu when selecting some text to add more text ma
 
 The dialog for adding a link could be avoided (and replaced), but it will complicate the code.
 
+Also, there are some edge cases when manipulating the link that need to be debugged.
+
+My advice is to fork the editor we used and make it your own.
+
 References :
 
 - [Details of the test](https://routineco.notion.site/Exercise-iOS-Android-links-99dbff03302440ff88d605d50aaeb27b)
