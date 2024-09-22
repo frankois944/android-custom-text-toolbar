@@ -30,6 +30,7 @@ import com.mohamedrejeb.richeditor.ui.material3.RichTextEditor
 import fr.francoisdabonot.routinetexteditor.modal.HyperlinkAlertDialog
 import fr.francoisdabonot.routinetexteditor.toolbar.CustomTextToolbar
 import fr.francoisdabonot.routinetexteditor.utils.keyboardDisplayAsState
+import kotlinx.coroutines.flow.collect
 import kotlin.math.roundToInt
 
 @Composable

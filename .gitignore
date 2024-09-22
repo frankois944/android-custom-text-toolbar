@@ -32,3 +32,5 @@ google-services.json
 *.hprof
 /.kotlin/
 /.fleet/
+.idea/libraries
+.idea/modules.xml
