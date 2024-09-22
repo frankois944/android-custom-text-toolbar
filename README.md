@@ -5,7 +5,7 @@ This test uses Compose multiplatform, but it can also work with Compose for Andr
 
 Currently, this app can run on iOS, but the gestures are totally broken (for now).
 
-I have customized the contextual menu when selecting some text to add more text manipulation than the default one.
+I have replaced the contextual menu when selecting some text to add more text manipulation than the default one.
 
 The dialog for adding a link could be avoided (and replaced), but it will complicate the code.
 
