@@ -8,8 +8,9 @@ This is the result of
 - [Text editor engine used](https://github.com/MohamedRejeb/compose-rich-editor)
 
 
-Screen captures
+Some screens
 
-![simple](./screens/screen1.png)
-![with selection](./screens/screen2.png)
-![add new link](./screens/screen3.png)
+| ![simple](./screens/screen1.png)       | ![with selection](./screens/screen2.png) |
+|----------------------------------------|------------------------------------------|
+| ![add new link](./screens/screen3.png) |                                          |
+
