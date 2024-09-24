@@ -49,6 +49,7 @@ fun RichEditorView(
     val richTextState = rememberRichTextState()
     val uriHandler = LocalUriHandler.current
     val isKeyboardOpen by keyboardDisplayAsState()
+    var previousInteraction by remember { mutableStateOf<Interaction?>(null) }
     var positionInRootEditor by remember { mutableStateOf(Offset.Zero) }
     val interactionSource = remember { MutableInteractionSource() }
     var currentInteraction by remember { mutableStateOf<Interaction?>(null) }
@@ -81,9 +82,13 @@ fun RichEditorView(
         LaunchedEffect(Unit) { richTextState.setHtml(initialHtmlContent) }
 
         LaunchedEffect(richTextState.selection, currentInteraction) {
-            if (richTextState.isLink && currentInteraction is PressInteraction.Release) {
+            if (richTextState.isLink &&
+                currentInteraction is PressInteraction.Release &&
+                previousInteraction is PressInteraction.Press
+            ) {
                 openLink(richTextState.selectedLinkUrl)
             }
+            previousInteraction = currentInteraction
         }
 
         Column(modifier = modifier) {
