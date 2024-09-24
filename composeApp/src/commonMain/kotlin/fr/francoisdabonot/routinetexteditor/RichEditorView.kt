@@ -30,6 +30,7 @@ import com.mohamedrejeb.richeditor.ui.material3.RichTextEditor
 import fr.francoisdabonot.routinetexteditor.modal.HyperlinkAlertDialog
 import fr.francoisdabonot.routinetexteditor.toolbar.CustomTextToolbar
 import fr.francoisdabonot.routinetexteditor.utils.keyboardDisplayAsState
+import fr.francoisdabonot.routinetexteditor.utils.uriHandler
 import kotlinx.coroutines.flow.collect
 import kotlin.math.roundToInt
 
@@ -38,6 +39,7 @@ fun RichEditorView(
     modifier: Modifier = Modifier,
     initialHtmlContent: String,
 ) {
+    val platform = getPlatform()
     var linkAdded by remember { mutableStateOf(false) }
     var showAddLink by remember { mutableStateOf(false) }
     var displayContextualMenu by remember { mutableStateOf<Rect?>(null) }
@@ -60,7 +62,7 @@ fun RichEditorView(
     fun openLink(uri: String?) {
         uri?.let {
             displayContextualMenu = null
-            uriHandler.openUri(it)
+            uriHandler(uriHandler, it)
             keyboardController?.hide()
             focusManager.clearFocus()
             focusRequester.freeFocus()

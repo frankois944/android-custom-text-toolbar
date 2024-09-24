@@ -2,7 +2,9 @@ package fr.francoisdabonot.routinetexteditor
 
 import platform.UIKit.UIDevice
 
-class IOSPlatform: Platform {
+class IOSPlatform(
+    override val system: CurrentOS = CurrentOS.IOS,
+) : Platform {
     override val name: String = UIDevice.currentDevice.systemName() + " " + UIDevice.currentDevice.systemVersion
 }
 
