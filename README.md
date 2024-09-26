@@ -11,7 +11,7 @@ The dialog for adding a link could be avoided (and replaced), but it will compli
 
 Also, there are some edge cases when manipulating the link that need to be debugged.
 
-My advice is to __fork the editor we used and make it your own__.
+Waiting for update of the Text Editor and Compose for iOS
 
 References :
 
