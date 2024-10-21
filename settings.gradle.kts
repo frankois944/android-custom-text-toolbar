@@ -1,4 +1,4 @@
-rootProject.name = "RoutineTextEditorDemo"
+rootProject.name = "TextToolbarEditorDemo"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {

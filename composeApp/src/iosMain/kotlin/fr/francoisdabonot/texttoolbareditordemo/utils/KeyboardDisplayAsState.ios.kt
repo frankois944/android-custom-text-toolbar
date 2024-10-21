@@ -1,4 +1,4 @@
-package fr.francoisdabonot.routinetexteditor.utils
+package fr.francoisdabonot.texttoolbareditordemo.utils
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.State

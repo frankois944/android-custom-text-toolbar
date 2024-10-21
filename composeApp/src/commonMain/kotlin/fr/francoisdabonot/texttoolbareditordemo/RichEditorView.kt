@@ -3,7 +3,7 @@
     ExperimentalComposeUiApi::class,
 )
 
-package fr.francoisdabonot.routinetexteditor
+package fr.francoisdabonot.texttoolbareditordemo
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.interaction.*
@@ -27,11 +27,10 @@ import androidx.compose.ui.unit.dp
 import com.mohamedrejeb.richeditor.model.RichTextState
 import com.mohamedrejeb.richeditor.model.rememberRichTextState
 import com.mohamedrejeb.richeditor.ui.material3.RichTextEditor
-import fr.francoisdabonot.routinetexteditor.modal.HyperlinkAlertDialog
-import fr.francoisdabonot.routinetexteditor.toolbar.CustomTextToolbar
-import fr.francoisdabonot.routinetexteditor.utils.keyboardDisplayAsState
-import fr.francoisdabonot.routinetexteditor.utils.uriHandler
-import kotlinx.coroutines.flow.collect
+import fr.francoisdabonot.texttoolbareditordemo.modal.HyperlinkAlertDialog
+import fr.francoisdabonot.texttoolbareditordemo.toolbar.CustomTextToolbar
+import fr.francoisdabonot.texttoolbareditordemo.utils.keyboardDisplayAsState
+import fr.francoisdabonot.texttoolbareditordemo.utils.uriHandler
 import kotlin.math.roundToInt
 
 @Composable
@@ -73,6 +72,7 @@ fun RichEditorView(
 
     LaunchedEffect(interactionSource) {
         interactionSource.interactions.collect { interaction ->
+            println("Interaction: $interaction")
             currentInteraction = interaction
         }
     }

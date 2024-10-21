@@ -1,4 +1,4 @@
-package fr.francoisdabonot.routinetexteditor
+package fr.francoisdabonot.texttoolbareditordemo
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
@@ -26,7 +26,6 @@ fun App() {
                     modifier = Modifier.padding(start = 16.dp, top = 16.dp, end = 16.dp),
                     text =
                         """
-                        Technical Test by François Dabonot for Routine
                         It has a customized contextual menu when selecting text in the editor
                         you can :
                             - open/create/edit a link from the toolbar button or contextual menu
@@ -38,10 +37,10 @@ fun App() {
                     initialHtmlContent =
                         """
                         <div>
-                           Routine Demo editor
+                           TextToolBar Demo editor
                         </div>
                         <div>
-                            <a href="https://routine.co">Routine website</a>
+                            <a href="https://azodus.blog">Azodus website</a>
                         </div>
                         """.trimIndent(),
                 )

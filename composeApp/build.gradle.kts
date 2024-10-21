@@ -23,7 +23,7 @@ kotlin {
     ).forEach { iosTarget ->
         iosTarget.binaries.framework {
             baseName = "ComposeApp"
-            isStatic = false
+            isStatic = true
         }
     }
 
@@ -34,22 +34,22 @@ kotlin {
             implementation(libs.androidx.activity.compose)
         }
         commonMain.dependencies {
-            implementation(compose.runtime)
-            implementation(compose.foundation)
-            implementation(compose.material3)
-            implementation(compose.materialIconsExtended)
-            implementation(compose.ui)
-            implementation(compose.components.resources)
-            implementation(compose.components.uiToolingPreview)
-            implementation(libs.androidx.lifecycle.viewmodel)
-            implementation(libs.androidx.lifecycle.runtime.compose)
-            implementation(libs.richeditor.compose)
+            api(compose.runtime)
+            api(compose.foundation)
+            api(compose.material3)
+            api(compose.materialIconsExtended)
+            api(compose.ui)
+            api(compose.components.resources)
+            api(compose.components.uiToolingPreview)
+            api(libs.androidx.lifecycle.viewmodel)
+            api(libs.androidx.lifecycle.runtime.compose)
+            api(libs.richeditor.compose)
         }
     }
 }
 
 android {
-    namespace = "fr.francoisdabonot.routinetexteditor"
+    namespace = "fr.francoisdabonot.texttoolbareditordemo"
     compileSdk =
         libs.versions.android.compileSdk
             .get()
@@ -60,7 +60,7 @@ android {
     sourceSets["main"].resources.srcDirs("src/commonMain/resources")
 
     defaultConfig {
-        applicationId = "fr.francoisdabonot.routinetexteditor"
+        applicationId = "fr.francoisdabonot.texttoolbareditordemo"
         minSdk =
             libs.versions.android.minSdk
                 .get()

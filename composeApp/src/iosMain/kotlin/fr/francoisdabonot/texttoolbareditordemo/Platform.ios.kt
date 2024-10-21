@@ -1,4 +1,4 @@
-package fr.francoisdabonot.routinetexteditor
+package fr.francoisdabonot.texttoolbareditordemo
 
 import platform.UIKit.UIDevice
 

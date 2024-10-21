@@ -1,4 +1,4 @@
-package fr.francoisdabonot.routinetexteditor.toolbar
+package fr.francoisdabonot.texttoolbareditordemo.toolbar
 
 import androidx.compose.ui.geometry.Rect
 import androidx.compose.ui.platform.TextToolbar

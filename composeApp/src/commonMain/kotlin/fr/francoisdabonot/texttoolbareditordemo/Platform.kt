@@ -1,4 +1,4 @@
-package fr.francoisdabonot.routinetexteditor
+package fr.francoisdabonot.texttoolbareditordemo
 
 enum class CurrentOS {
     IOS,

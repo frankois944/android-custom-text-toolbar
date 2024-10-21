@@ -1,4 +1,4 @@
-package fr.francoisdabonot.routinetexteditor.modal
+package fr.francoisdabonot.texttoolbareditordemo.modal
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.text.KeyboardActions
