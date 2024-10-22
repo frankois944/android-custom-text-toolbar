@@ -15,7 +15,6 @@ Waiting for update of the Text Editor and Compose for iOS
 
 References :
 
-- [Details of the test](https://routineco.notion.site/Exercise-iOS-Android-links-99dbff03302440ff88d605d50aaeb27b)
 - [Entry point of the code](composeApp/src/commonMain/kotlin/fr/francoisdabonot/texttoolbareditordemo/App.kt)
 - [Text editor engine](https://github.com/MohamedRejeb/compose-rich-editor)
 
