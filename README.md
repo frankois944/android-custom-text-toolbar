@@ -1,7 +1,9 @@
 # demo-test-tech
 
 
-This test uses Compose multiplatform, but it can also work with Compose for Android (as I wanted to make it works on iOS).
+This sample replace the default contextual menu of a selected text on Compose Android/CMP by a custom one.
+
+This sample uses Compose multiplatform, but it can also work with Compose for Android (as I wanted to make it works on iOS).
 
 Currently, this app can run on iOS, but some gestures are broken and need to be adapted/fixed... it makes the app useless (for now, I Hope).
 
